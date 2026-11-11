@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las 3 Motos Más Rápidas del Mundo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #101010, #252525);
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(90deg, #b00000, #ff4500);
+            text-align: center;
+            padding: 35px 15px;
+            box-shadow: 0 4px 15px black;
+        }
+
+        header h1 {
+            font-size: 38px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 17px;
+            color: #ffe0d5;
+        }
+
+        nav {
+            background: #080808;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4500;
+        }
+
+        .introduccion {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .introduccion h2 {
+            color: #ff4500;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .introduccion p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.7;
+            color: #cccccc;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 30px 20px 60px;
+        }
+
+        .moto {
+            background: #1c1c1c;
+            width: 320px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #383838;
+            box-shadow: 0 5px 20px rgba(255, 69, 0, 0.15);
+            transition: 0.4s;
+        }
+
+        .moto:hover {
+            transform: translateY(-10px);
+            border-color: #ff4500;
+            box-shadow: 0 10px 25px rgba(255, 69, 0, 0.4);
+        }
+
+        .moto img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .contenido {
+            padding: 22px;
+        }
+
+        .contenido h3 {
+            color: #ff4500;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .contenido p {
+            color: #cccccc;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .velocidad {
+            background: #b00000;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .boton {
+            display: block;
+            text-align: center;
+            background: #ff4500;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background: #b00000;
+        }
+
+        footer {
+            background: #080808;
+            text-align: center;
+            padding: 25px;
+            color: #aaaaaa;
+            border-top: 3px solid #ff4500;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .moto {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🏍️ Mundo de Velocidad</h1>
+        <p>Descubre las 3 motocicletas más impresionantes del mundo</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#motos">Motocicletas</a>
+        <a href="#contacto">Información</a>
+    </nav>
+
+    <section class="introduccion" id="inicio">
+        <h2>Velocidad Extrema</h2>
+        <p>
+            Las motocicletas deportivas representan la máxima combinación
+            de potencia, tecnología y diseño. Conoce tres máquinas
+            extraordinarias que destacan por su increíble velocidad
+            y rendimiento.
+        </p>
+    </section>
+
+    <section class="contenedor" id="motos">
+
+        <!-- MOTO 1 -->
+        <div class="moto">
+            <img src="kawa.jpg" alt="Kawasaki Ninja H2R">
+
+            <div class="contenido">
+                <h3>1. Kawasaki Ninja H2R</h3>
+
+                <p>
+                    Una motocicleta diseñada exclusivamente para circuito.
+                    Cuenta con un motor sobrealimentado y un diseño
+                    aerodinámico espectacular.
+                </p>
+
+                <p><b>Motor:</b> 998 cc</p>
+                <p><b>Potencia:</b> Aproximadamente 310 HP</p>
+
+                <div class="velocidad">
+                    Velocidad: Más de 350 km/h
+                </div>
+
+                <a href="https://www.kawasaki.com/"
+                   target="_blank" class="boton">
+                    Más información
+                </a>
+            </div>
+        </div>
+
+        <!-- MOTO 2 -->
+        <div class="moto">
+            <img src="mtt.jpg" alt="MTT 420-R">
+
+            <div class="contenido">
+                <h3>2. MTT 420-R</h3>
+
+                <p>
+                    Una motocicleta extraordinaria que utiliza
+                    tecnología de turbina. Es una de las máquinas
+                    más exclusivas y potentes del planeta.
+                </p>
+
+                <p><b>Motor:</b> Turbina Rolls-Royce Allison</p>
+                <p><b>Potencia:</b> Aproximadamente 420 HP</p>
+
+                <div class="velocidad">
+                    Velocidad: Rendimiento extremo
+                </div>
+
+                <a href="https://www.marineturbine.com/"
+                   target="_blank" class="boton">
+                    Más información
+                </a>
+            </div>
+        </div>
+
+        <!-- MOTO 3 -->
+        <div class="moto">
+            <img src="3.png" alt="Lightning LS-218">
+
+            <div class="contenido">
+                <h3>3. Lightning LS-218</h3>
+
+                <p>
+                    Una motocicleta eléctrica deportiva que sorprende
+                    por su aceleración y tecnología. Combina potencia
+                    eléctrica con un diseño futurista.
+                </p>
+
+                <p><b>Motor:</b> Eléctrico</p>
+                <p><b>Potencia:</b> Hasta 244 HP</p>
+
+                <div class="velocidad">
+                    Velocidad: Hasta 351 km/h
+                </div>
+
+                <a href="https://lightningmotorcycle.com/"
+                   target="_blank" class="boton">
+                    Más información
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="contacto">
+        <h3>🏁 Mundo de Velocidad</h3>
+        <p>La pasión por las motocicletas nunca termina.</p>
+        <p>© 2026 - Página web de motocicletas</p>
+    </footer>
+
+</body>
+</html>
